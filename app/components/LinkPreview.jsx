@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { JSDOM } from "jsdom";
 
 const extractMetaTags = async (url) => {
@@ -39,7 +40,9 @@ const extractMetaTags = async (url) => {
   }
 };
 
-export default async function LinkPreview({ url }) {
+const emptyImg = "/img/web-previews/Empty.png";
+
+export default async function LinkPreview({ url, webImage = emptyImg }) {
   //here calling the function
   const data = await extractMetaTags(url);
 
@@ -53,13 +56,13 @@ export default async function LinkPreview({ url }) {
       className="cursor-pointer flex items-start bg-[#0f172a] gap-3 text-left p-4 hover:bg-gray-800 hover:rounded-lg"
       style={{ textDecoration: "none" }}
     >
-      <div className="pt-2">
-        <img
-          src={data.image}
-          alt="Link Preview"
+      <div className="pt-2 ">
+        <Image
+          src={webImage || ""}
+          alt={`Náhled webové stránky ${data.title}`}
           width={200}
           height={48}
-          className="m-0"
+          className="m-0 border-2 rounded-md border-gray-700 hover:transform hover:scale-105 hover:duration-500 hover:ease-in-out"
         />
       </div>
 

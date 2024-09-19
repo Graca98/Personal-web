@@ -7,6 +7,7 @@ export default function MainPage() {
       <div className="lg:flex lg:justify-between lg:gap-4">
         <header className="lg:max-h-screen w-1/2 lg:top-0 py-24 lg:sticky">
           <section className="">
+            {/* ========== Úvod ========== */}
             <h1 className="text-5xl text-slate-200 font-bold text mb-3">
               Denis Gracias
             </h1>
@@ -20,6 +21,7 @@ export default function MainPage() {
         </header>
 
         <main className="w-1/2 py-24">
+          {/* ========== About me ========== */}
           <section id="aboutme" className="mb-16 md:mb-24 lg:mb-36">
             <div></div>
             <p className="mb-4 leading-relaxed">
@@ -49,72 +51,136 @@ export default function MainPage() {
             </p>
           </section>
 
+          {/* ========== Zkušenosti ========== */}
           <section id="experience" className="mb-16 md:mb-24 lg:mb-36">
             <h2 className="font-bold text-2xl mb-4">Moje zkušenosti</h2>
             <div className="flex gap-2 mb-12 hover:bg-gray-800 hover:rounded-lg p-4">
               <div className="w-36 mt-[2px]">
-                <p>2019 — 2021</p>
+                <p>2023 — 2024</p>
               </div>
               <div className="w-fit">
                 <h3 className="text-xl text-slate-200 font-semibold mb-4">
-                  Seřizovač vstřikolisů
+                  Vývojář junior, B2C support koordinátor · FAST ČR, a.s.
                 </h3>
                 <p className="text-sm mb-4">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae
-                  quia vitae magni ullam numquam amet, dignissimos nemo!
-                  Doloribus, veritatis. Magnam fugit molestias molestiae impedit
-                  autem repellendus omnis sapiente dolorem accusamus! Lorem,
-                  ipsum dolor sit amet consectetur adipisicing elit. Quo totam
-                  vel reprehenderit aliquid qui? Sunt repellendus excepturi
-                  officia ullam ex ea corporis temporibus consequuntur libero
-                  consequatur, ad, facere alias. Itaque? Lorem, ipsum dolor sit
-                  amet consectetur adipisicing elit. Minima facere cum tempora
-                  rem.
+                  Vývoj a přidávání obsahu na web Planeo.cz
                 </p>
+                <ul className="flex gap-2">
+                  {/* <li className="px-3 py-1 rounded-full bg-sky-950 text-sky-400"> */}
+                  <li className="px-3 py-1 text-sm rounded-full bg-cyan-950 text-teal-400">
+                    MS Office
+                  </li>
+                  <li className="px-3 py-1 text-sm rounded-full bg-cyan-950 text-teal-400">
+                    SAP
+                  </li>
+                  <li className="px-3 py-1 text-sm rounded-full bg-cyan-950 text-teal-400">
+                    Azure DevOps
+                  </li>
+                  <li className="px-3 py-1 text-sm rounded-full bg-cyan-950 text-teal-400">
+                    HTML/CSS
+                  </li>
+                  <li className="px-3 py-1 text-sm rounded-full bg-cyan-950 text-teal-400">
+                    JavaScript
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Kurz */}
+            <div className="flex gap-2 mb-12 hover:bg-gray-800 hover:rounded-lg p-4">
+              <div className="w-36 mt-[2px]">
+                <p>2023 — 2023</p>
+              </div>
+              <div className="w-fit">
+                <h3 className="text-xl text-slate-200 font-semibold mb-4">
+                  Rekvalifikační kurz Programátor WWW aplikací JavaScript ·
+                  ITnetwork s.r.o. - IT AKADEMIE
+                </h3>
+                <ul className="text-sm mb-4">
+                  <li>
+                    Základní konstrukce jazyka JavaScript (Zakončeno
+                    certifikátem)
+                  </li>
+                  <li>Objektově-orientované programování v JavaScript</li>
+                  <li>Debugging v JavaScriptu</li>
+                  <li>Moderní webdesign</li>
+                  <li>Node.js</li>
+                  <li>JavaScript framework (React)</li>
+                  <li>Bootstrap</li>
+                  <li>UML</li>
+                  <li>Návrhové vzory</li>
+                  <li>Testování</li>
+                  <li>Verzování</li>
+                </ul>
                 <ul className="flex gap-2">
                   {/* <li className="px-3 py-1 rounded-full bg-sky-950 text-sky-400"> */}
                   <li className="px-3 py-1 text-sm rounded-full bg-cyan-950 text-teal-400">
                     JavaScript
                   </li>
                   <li className="px-3 py-1 text-sm rounded-full bg-cyan-950 text-teal-400">
-                    TypeScript
+                    React
                   </li>
                   <li className="px-3 py-1 text-sm rounded-full bg-cyan-950 text-teal-400">
-                    React
+                    Next.js
+                  </li>
+                  <li className="px-3 py-1 text-sm rounded-full bg-cyan-950 text-teal-400">
+                    Bootstrap
+                  </li>
+                  <li className="px-3 py-1 text-sm rounded-full bg-cyan-950 text-teal-400">
+                    TailwindCSS
                   </li>
                 </ul>
               </div>
             </div>
 
-            <div>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae
-              quia vitae magni ullam numquam amet, dignissimos nemo! Doloribus,
-              veritatis. Magnam fugit molestias molestiae impedit autem
-              repellendus omnis sapiente dolorem accusamus! Lorem, ipsum dolor
-              sit amet consectetur adipisicing elit. Quo totam vel reprehenderit
-              aliquid qui? Sunt repellendus excepturi officia ullam ex ea
-              corporis temporibus consequuntur libero consequatur, ad, facere
-              alias. Itaque? Lorem, ipsum dolor.
+            {/* Ramp agent */}
+            <div className="flex gap-2 mb-12 hover:bg-gray-800 hover:rounded-lg p-4">
+              <div className="w-36 mt-[2px]">
+                <p>2022 — 2023</p>
+              </div>
+              <div className="w-fit">
+                <h3 className="text-xl text-slate-200 font-semibold mb-4">
+                  Ramp agent · Menzies Aviation, Amsterdam NL
+                </h3>
+                <p className="text-sm mb-4">Nakládání a vykládání letadel</p>
+              </div>
             </div>
-            <div>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae
-              quia vitae magni ullam numquam amet, dignissimos nemo! Doloribus,
-              veritatis. Magnam fugit molestias molestiae.
+
+            {/* Seřizovač */}
+            <div className="flex gap-2 mb-12 hover:bg-gray-800 hover:rounded-lg p-4">
+              <div className="w-36 mt-[2px]">
+                <p>2019 — 2022</p>
+              </div>
+              <div className="w-fit">
+                <h3 className="text-xl text-slate-200 font-semibold mb-4">
+                  Seřizovač vstřikolisů · Wavin Czechia s.r.o.
+                </h3>
+                <p className="text-sm mb-4">
+                  Seřízení, montáž a demontáž forem vstřikovacího stroje
+                </p>
+              </div>
             </div>
           </section>
+
+          {/* ========== Projekty ========== */}
           <section id="projects" className="mb-16 md:mb-24 lg:mb-36">
             <h2 className="font-bold text-2xl mb-4">Projekty</h2>
             <LinkPreviw
               url={"https://graca98.github.io/Terminus-Page/"}
+              webImage={"/img/web-previews/TerminusPage.png"}
             ></LinkPreviw>
             <LinkPreviw
               url={"https://graca98.github.io/NextJS-Todo-App/"}
+              webImage={"/img/web-previews/TodoApp.png"}
             ></LinkPreviw>
-            <LinkPreviw url={"https://www.google.com/"}></LinkPreviw>
-            <div>Projekt 3</div>
-            <div>Projekt 4</div>
-            <div>Projekt 5</div>
-            <div>Projekt 6</div>
+            <LinkPreviw
+              url={"https://graca98.github.io/PojisteniApp-Project/index.html?"}
+              webImage={"/img/web-previews/Pojisteni.png"}
+            ></LinkPreviw>
+            <LinkPreviw
+              url={"https://graca98.github.io/kalkulacka/"}
+              webImage={"/img/web-previews/Kalkulacka.png"}
+            ></LinkPreviw>
           </section>
           <footer></footer>
         </main>
