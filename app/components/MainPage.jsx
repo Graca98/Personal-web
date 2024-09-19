@@ -1,4 +1,5 @@
 import "./MainPage.css";
+import LinkPreviw from "./LinkPreview";
 
 export default function MainPage() {
   return (
@@ -47,6 +48,7 @@ export default function MainPage() {
               ducimus aperiam.
             </p>
           </section>
+
           <section id="experience" className="mb-16 md:mb-24 lg:mb-36">
             <h2 className="font-bold text-2xl mb-4">Moje zkušenosti</h2>
             <div className="flex gap-2 mb-12 hover:bg-gray-800 hover:rounded-lg p-4">
@@ -102,12 +104,17 @@ export default function MainPage() {
           </section>
           <section id="projects" className="mb-16 md:mb-24 lg:mb-36">
             <h2 className="font-bold text-2xl mb-4">Projekty</h2>
-            <div>Proejkt 1</div>
-            <div>Proejkt 2</div>
-            <div>Proejkt 3</div>
-            <div>Proejkt 4</div>
-            <div>Proejkt 5</div>
-            <div>Proejkt 6</div>
+            <LinkPreviw
+              url={"https://graca98.github.io/Terminus-Page/"}
+            ></LinkPreviw>
+            <LinkPreviw
+              url={"https://graca98.github.io/NextJS-Todo-App/"}
+            ></LinkPreviw>
+            <LinkPreviw url={"https://www.google.com/"}></LinkPreviw>
+            <div>Projekt 3</div>
+            <div>Projekt 4</div>
+            <div>Projekt 5</div>
+            <div>Projekt 6</div>
           </section>
           <footer></footer>
         </main>
