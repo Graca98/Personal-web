@@ -1,4 +1,5 @@
 import "./MainPage.css";
+import Link from "next/link";
 import LinkPreviw from "./LinkPreview";
 import Badge from "./Badge"
 
@@ -7,7 +8,7 @@ export default function MainPage() {
     <div className="mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0">
       <div className="lg:flex lg:justify-between lg:gap-4">
         <header className="lg:max-h-screen w-1/2 lg:top-0 py-24 lg:sticky">
-          <section className="">
+          <section className="mb-12">
             {/* ========== Úvod ========== */}
             <h1 className="text-5xl text-slate-200 font-bold text mb-3">
               Denis Gracias
@@ -18,6 +19,12 @@ export default function MainPage() {
             <h3 className="max-w-xs">
               Zde bude krátký popis o tom co vytvářím a tak dále...
             </h3>
+          </section>
+
+          <section>
+            <Link href="#aboutme">O mně</Link>
+            <Link href="#experience">Zkušenosti</Link>
+            <Link href="#projects">Projekty</Link>
           </section>
         </header>
 
@@ -55,45 +62,35 @@ export default function MainPage() {
           {/* ========== Zkušenosti ========== */}
           <section id="experience" className="mb-16 md:mb-24 lg:mb-36">
             <h2 className="font-bold text-2xl mb-4">Moje zkušenosti</h2>
-            <div className="flex gap-2 mb-12 hover:bg-gray-800 hover:rounded-lg p-4">
-              <div className="w-36 mt-[2px]">
+            <div className="grid grid-cols-8 mb-6 hover:bg-gray-800 hover:rounded-lg p-4">
+              <div className="col-span-2 mt-[2px]">
                 <p>2023 — 2024</p>
               </div>
-              <div className="w-fit">
+              <div className="col-span-6 w-fit">
                 <h3 className="text-xl text-slate-200 font-semibold mb-4">
                   Vývojář junior, B2C support koordinátor · FAST ČR, a.s.
                 </h3>
                 <p className="text-sm mb-4">
                   Vývoj a přidávání obsahu na web Planeo.cz
                 </p>
-                <ul className="flex gap-2">
+                <ul className="flex flex-wrap gap-2">
                   {/* <li className="px-3 py-1 rounded-full bg-sky-950 text-sky-400"> */}
                   <Badge skill="MS Office"/>
-                  <li className="px-3 py-1 text-sm rounded-full bg-cyan-950 text-teal-400">
-                    MS Office
-                  </li>
-                  <li className="px-3 py-1 text-sm rounded-full bg-cyan-950 text-teal-400">
-                    SAP
-                  </li>
-                  <li className="px-3 py-1 text-sm rounded-full bg-cyan-950 text-teal-400">
-                    Azure DevOps
-                  </li>
-                  <li className="px-3 py-1 text-sm rounded-full bg-cyan-950 text-teal-400">
-                    HTML/CSS
-                  </li>
-                  <li className="px-3 py-1 text-sm rounded-full bg-cyan-950 text-teal-400">
-                    JavaScript
-                  </li>
+                  <Badge skill="SAP"/>
+                  <Badge skill="Azure DevOps"/>
+                  <Badge skill="HTML/CSS"/>
+                  <Badge skill="JavaScript"/>
+                  
                 </ul>
               </div>
             </div>
 
             {/* Kurz */}
-            <div className="flex gap-2 mb-12 hover:bg-gray-800 hover:rounded-lg p-4">
-              <div className="w-36 mt-[2px]">
+            <div className="grid grid-cols-8 mb-6 hover:bg-gray-800 hover:rounded-lg p-4">
+              <div className="col-span-2 mt-[2px]">
                 <p>2023 — 2023</p>
               </div>
-              <div className="w-fit">
+              <div className="col-span-6 w-fit">
                 <h3 className="text-xl text-slate-200 font-semibold mb-4">
                   Rekvalifikační kurz Programátor WWW aplikací JavaScript ·
                   ITnetwork s.r.o. - IT AKADEMIE
@@ -116,31 +113,21 @@ export default function MainPage() {
                 </ul>
                 <ul className="flex gap-2">
                   {/* <li className="px-3 py-1 rounded-full bg-sky-950 text-sky-400"> */}
-                  <li className="px-3 py-1 text-sm rounded-full bg-cyan-950 text-teal-400">
-                    JavaScript
-                  </li>
-                  <li className="px-3 py-1 text-sm rounded-full bg-cyan-950 text-teal-400">
-                    React
-                  </li>
-                  <li className="px-3 py-1 text-sm rounded-full bg-cyan-950 text-teal-400">
-                    Next.js
-                  </li>
-                  <li className="px-3 py-1 text-sm rounded-full bg-cyan-950 text-teal-400">
-                    Bootstrap
-                  </li>
-                  <li className="px-3 py-1 text-sm rounded-full bg-cyan-950 text-teal-400">
-                    TailwindCSS
-                  </li>
+                  <Badge skill="JavaScript"/>
+                  <Badge skill="React"/>
+                  <Badge skill="Next.js"/>
+                  <Badge skill="Bootstrap"/>
+                  <Badge skill="TailwindCSS"/>
                 </ul>
               </div>
             </div>
 
             {/* Ramp agent */}
-            <div className="flex gap-2 mb-12 hover:bg-gray-800 hover:rounded-lg p-4">
-              <div className="w-36 mt-[2px]">
+            <div className="grid grid-cols-8 mb-6 hover:bg-gray-800 hover:rounded-lg p-4">
+              <div className="col-span-2 mt-[2px]">
                 <p>2022 — 2023</p>
               </div>
-              <div className="w-fit">
+              <div className="col-span-6 w-fit">
                 <h3 className="text-xl text-slate-200 font-semibold mb-4">
                   Ramp agent · Menzies Aviation, Amsterdam NL
                 </h3>
@@ -149,11 +136,11 @@ export default function MainPage() {
             </div>
 
             {/* Seřizovač */}
-            <div className="flex gap-2 mb-12 hover:bg-gray-800 hover:rounded-lg p-4">
-              <div className="w-36 mt-[2px]">
+            <div className="grid grid-cols-8 mb-6 hover:bg-gray-800 hover:rounded-lg p-4">
+              <div className="col-span-2 mt-[2px]">
                 <p>2019 — 2022</p>
               </div>
-              <div className="w-fit">
+              <div className="col-span-6 w-fit">
                 <h3 className="text-xl text-slate-200 font-semibold mb-4">
                   Seřizovač vstřikolisů · Wavin Czechia s.r.o.
                 </h3>
@@ -170,21 +157,28 @@ export default function MainPage() {
             <LinkPreviw
               url={"https://graca98.github.io/Terminus-Page/"}
               webImage={"/img/web-previews/TerminusPage.png"}
-            ></LinkPreviw>
+              skills={["NextJS", "TailwindCSS", "RippleUI", "React Icons"]}
+            >
+            </LinkPreviw>
             <LinkPreviw
               url={"https://graca98.github.io/NextJS-Todo-App/"}
               webImage={"/img/web-previews/TodoApp.png"}
+              skills={["NextJS", "TailwindCSS", "MongoDB"]}
             ></LinkPreviw>
             <LinkPreviw
               url={"https://graca98.github.io/PojisteniApp-Project/index.html?"}
               webImage={"/img/web-previews/Pojisteni.png"}
+              skills={["HTML", "CSS", "JavaScript", "Bootstrap"]}
             ></LinkPreviw>
             <LinkPreviw
               url={"https://graca98.github.io/kalkulacka/"}
               webImage={"/img/web-previews/Kalkulacka.png"}
+              skills={["HTML", "CSS", "JavaScript"]}
             ></LinkPreviw>
           </section>
-          <footer></footer>
+          <footer>
+            <p className="text-xs">Zde bude finální text + od koho mam inspiraci</p>
+          </footer>
         </main>
       </div>
     </div>

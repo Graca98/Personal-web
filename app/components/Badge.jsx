@@ -1,9 +1,9 @@
-export default function Badge({skill}) {
+export default function Badge({skill, style}) {
   return (
     <>
-      <span class="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-sm text-purple-700 dark:bg-purple-700 dark:text-purple-100">
+      <li className={`whitespace-nowrap px-3 py-1 text-xs rounded-full bg-cyan-950 text-teal-400`}>
         {skill}
-      </span>
+      </li>
     </>
   );
 }
