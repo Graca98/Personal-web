@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { JSDOM } from "jsdom";
+import Badge from "./Badge"
 
 const extractMetaTags = async (url) => {
   try {
@@ -42,7 +43,7 @@ const extractMetaTags = async (url) => {
 
 const emptyImg = "/img/web-previews/Empty.png";
 
-export default async function LinkPreview({ url, webImage = emptyImg }) {
+export default async function LinkPreview({ url, webImage = emptyImg, skills=[] }) {
   //here calling the function
   const data = await extractMetaTags(url);
 
@@ -53,7 +54,7 @@ export default async function LinkPreview({ url, webImage = emptyImg }) {
     <Link
       href={url}
       target="_blank"
-      className="cursor-pointer flex items-start bg-[#0f172a] gap-3 text-left p-4 hover:bg-gray-800 hover:rounded-lg"
+      className="cursor-pointer flex items-start bg-[#0f172a] gap-3 text-left p-4 hover:bg-gray-800 hover:rounded-lg mb-4"
       style={{ textDecoration: "none" }}
     >
       <div className="pt-2 ">
@@ -71,7 +72,12 @@ export default async function LinkPreview({ url, webImage = emptyImg }) {
           {data.title}
         </h3>
         <p className="text-sm mb-2">{data.description}</p>
-        <span className="text-xs opacity-50">{url}</span>
+        <p className="text-xs opacity-50 mb-4">{url}</p>
+        <ul className="flex flex-wrap gap-2">
+        {skills.map((skillName, index) => {
+          return <Badge key={`${skillName}-${index}`} skill={skillName}/>
+        })}
+        </ul>
       </div>
     </Link>
   );
