@@ -1,5 +1,6 @@
 import "./MainPage.css";
 import LinkPreviw from "./LinkPreview";
+import Badge from "./Badge"
 
 export default function MainPage() {
   return (
@@ -67,6 +68,7 @@ export default function MainPage() {
                 </p>
                 <ul className="flex gap-2">
                   {/* <li className="px-3 py-1 rounded-full bg-sky-950 text-sky-400"> */}
+                  <Badge skill="MS Office"/>
                   <li className="px-3 py-1 text-sm rounded-full bg-cyan-950 text-teal-400">
                     MS Office
                   </li>
