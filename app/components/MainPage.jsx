@@ -21,10 +21,10 @@ export default function MainPage() {
             </h3>
           </section>
 
-          <section>
-            <Link href="#aboutme">O mně</Link>
-            <Link href="#experience">Zkušenosti</Link>
-            <Link href="#projects">Projekty</Link>
+          <section className="flex flex-col gap-2">
+            <Link href="#aboutme" className="hover:text-slate-200 hover:font-bold active:text-slate-100">— O mně</Link>
+            <Link href="#experience" className="hover:text-slate-200 hover:font-bold active:text-slate-100">— Zkušenosti</Link>
+            <Link href="#projects" className="hover:text-slate-200 hover:font-bold active:text-slate-100">— Projekty</Link>
           </section>
         </header>
 
