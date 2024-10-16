@@ -1,9 +1,13 @@
+'use client'
+
 import "./MainPage.css";
 import Link from "next/link";
+
 import LinkPreviw from "./LinkPreview";
 import Badge from "./Badge"
 
 export default function MainPage() {
+  // const sectionRef = useRef(null)
   return (
     <div className="mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0">
       <div className="lg:flex lg:justify-between lg:gap-4">
@@ -21,10 +25,15 @@ export default function MainPage() {
             </h3>
           </section>
 
-          <section className="flex flex-col gap-2">
+          {/* <section className="flex flex-col gap-2">
             <Link href="#aboutme" className="hover:text-slate-200 hover:font-bold active:text-slate-100">— O mně</Link>
             <Link href="#experience" className="hover:text-slate-200 hover:font-bold active:text-slate-100">— Zkušenosti</Link>
             <Link href="#projects" className="hover:text-slate-200 hover:font-bold active:text-slate-100">— Projekty</Link>
+          </section> */}
+          <section className="flex flex-col gap-2">
+            {/* <button href="#aboutme" className="hover:text-slate-200 hover:font-bold active:text-slate-100">— O mně</button> */}
+            <button  className="hover:text-slate-200 hover:font-bold active:text-slate-100">— Zkušenosti</button>
+            {/* <button href="#projects" className="hover:text-slate-200 hover:font-bold active:text-slate-100">— Projekty</button> */}
           </section>
         </header>
 
