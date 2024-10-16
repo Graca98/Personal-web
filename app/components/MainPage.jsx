@@ -1,10 +1,11 @@
-'use client'
 
 import "./MainPage.css";
 import Link from "next/link";
 
 import LinkPreviw from "./LinkPreview";
+import ScrollButtons from "./ScrollButtons"
 import Badge from "./Badge"
+import Projects from "./Projects"
 
 export default function MainPage() {
   // const sectionRef = useRef(null)
@@ -30,11 +31,7 @@ export default function MainPage() {
             <Link href="#experience" className="hover:text-slate-200 hover:font-bold active:text-slate-100">— Zkušenosti</Link>
             <Link href="#projects" className="hover:text-slate-200 hover:font-bold active:text-slate-100">— Projekty</Link>
           </section> */}
-          <section className="flex flex-col gap-2">
-            {/* <button href="#aboutme" className="hover:text-slate-200 hover:font-bold active:text-slate-100">— O mně</button> */}
-            <button  className="hover:text-slate-200 hover:font-bold active:text-slate-100">— Zkušenosti</button>
-            {/* <button href="#projects" className="hover:text-slate-200 hover:font-bold active:text-slate-100">— Projekty</button> */}
-          </section>
+          <ScrollButtons />
         </header>
 
         <main className="w-1/2 py-24">
@@ -161,30 +158,8 @@ export default function MainPage() {
           </section>
 
           {/* ========== Projekty ========== */}
-          <section id="projects" className="mb-16 md:mb-24 lg:mb-36">
-            <h2 className="font-bold text-2xl mb-4">Projekty</h2>
-            <LinkPreviw
-              url={"https://graca98.github.io/Terminus-Page/"}
-              webImage={"/img/web-previews/TerminusPage.png"}
-              skills={["NextJS", "TailwindCSS", "RippleUI", "React Icons"]}
-            >
-            </LinkPreviw>
-            <LinkPreviw
-              url={"https://graca98.github.io/NextJS-Todo-App/"}
-              webImage={"/img/web-previews/TodoApp.png"}
-              skills={["NextJS", "TailwindCSS", "MongoDB"]}
-            ></LinkPreviw>
-            <LinkPreviw
-              url={"https://graca98.github.io/PojisteniApp-Project/index.html?"}
-              webImage={"/img/web-previews/Pojisteni.png"}
-              skills={["HTML", "CSS", "JavaScript", "Bootstrap"]}
-            ></LinkPreviw>
-            <LinkPreviw
-              url={"https://graca98.github.io/kalkulacka/"}
-              webImage={"/img/web-previews/Kalkulacka.png"}
-              skills={["HTML", "CSS", "JavaScript"]}
-            ></LinkPreviw>
-          </section>
+          <Projects />
+
           <footer>
             <p className="text-xs">Zde bude finální text + od koho mam inspiraci</p>
           </footer>
