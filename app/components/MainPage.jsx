@@ -58,7 +58,7 @@ export default function MainPage() {
             id="aboutme"
             className="mb-16 md:mb-24 lg:mb-36 scroll-mt-16 lg:scroll-mt-24"
           >
-            <h2 className="font-bold text-2xl mb-4 lg:hidden">O mně</h2>
+            <h2 className="font-bold text-2xl mb-4 lg:hidden sticky-headline">O mně</h2>
             <p className="mb-4 leading-relaxed">
               V roce 2018, když jsem pracoval na letišti v Amsterdamu, jsem se
               na bytě potkal s kamarádem, který se začal sám učit tvořit webové
@@ -95,10 +95,10 @@ export default function MainPage() {
             id="experience"
             className="mb-16 md:mb-24 lg:mb-36 scroll-mt-16 lg:scroll-mt-24"
           >
-            <h2 className="font-bold text-2xl mb-4">Moje zkušenosti</h2>
+            <h2 className="font-bold text-2xl mb-4 sticky-headline">Zkušenosti</h2>
 
             {/* Fast */}
-            <div className="grid lg:grid-cols-8 mb-6 hover:bg-gray-800 hover:rounded-lg lg:px-4 py-4">
+            <div className="grid lg:grid-cols-8 mb-6 md:hover:bg-gray-800 md:hover:rounded-lg md:-mx-4 md:px-4 py-4">
               <div className="col-span-2 mt-[2px] mb-2 lg:mb-0">
                 <p>2023 — 2024</p>
               </div>
@@ -121,7 +121,7 @@ export default function MainPage() {
             </div>
 
             {/* Kurz */}
-            <div className="grid lg:grid-cols-8 mb-6 hover:bg-gray-800 hover:rounded-lg lg:px-4 py-4">
+            <div className="grid lg:grid-cols-8 mb-6 md:hover:bg-gray-800 md:hover:rounded-lg md:-mx-4 md:px-4 py-4">
               <div className="col-span-2 mt-[2px] mb-2 lg:mb-0">
                 <p>2023 — 2023</p>
               </div>
@@ -146,7 +146,7 @@ export default function MainPage() {
                   <li>Testování</li>
                   <li>Verzování</li>
                 </ul>
-                <ul className="flex gap-2">
+                <ul className="flex flex-wrap gap-2">
                   {/* <li className="px-3 py-1 rounded-full bg-sky-950 text-sky-400"> */}
                   <Badge skill="JavaScript" />
                   <Badge skill="React" />
@@ -158,7 +158,7 @@ export default function MainPage() {
             </div>
 
             {/* Ramp agent */}
-            <div className="grid lg:grid-cols-8 mb-6 hover:bg-gray-800 hover:rounded-lg lg:px-4 py-4">
+            <div className="grid lg:grid-cols-8 mb-6 md:hover:bg-gray-800 md:hover:rounded-lg md:-mx-4 md:px-4 py-4">
               <div className="col-span-2 mt-[2px] mb-2 lg:mb-0">
                 <p>2022 — 2023</p>
               </div>
@@ -171,7 +171,7 @@ export default function MainPage() {
             </div>
 
             {/* Seřizovač */}
-            <div className="grid lg:grid-cols-8 mb-6 hover:bg-gray-800 hover:rounded-lg lg:px-4 py-4">
+            <div className="grid lg:grid-cols-8 mb-6 md:hover:bg-gray-800 md:hover:rounded-lg md:-mx-4 md:px-4 py-4">
               <div className="col-span-2 mt-[2px] mb-2 lg:mb-0">
                 <p>2019 — 2022</p>
               </div>

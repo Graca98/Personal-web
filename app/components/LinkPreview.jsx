@@ -54,7 +54,7 @@ export default async function LinkPreview({ url, webImage = emptyImg, skills=[] 
     <Link
       href={url}
       target="_blank"
-      className="cursor-pointer flex flex-col-reverse lg:flex-row items-start bg-[#0f172a] gap-3 text-left lg:px-4 py-4 hover:bg-gray-800 hover:rounded-lg mb-4"
+      className="cursor-pointer flex flex-col-reverse lg:flex-row items-start bg-[#0f172a] gap-3 text-left md:-mx-4 md:px-4 py-4 md:hover:bg-gray-800 md:hover:rounded-lg mb-4"
       style={{ textDecoration: "none" }}
     >
       <div className="pt-2 ">
@@ -63,7 +63,7 @@ export default async function LinkPreview({ url, webImage = emptyImg, skills=[] 
           alt={`Náhled webové stránky ${data.title}`}
           width={200}
           height={48}
-          className="m-0 border-2 rounded-md border-gray-700 hover:transform hover:scale-105 hover:duration-500 hover:ease-in-out"
+          className="m-0 border-2 rounded-md border-gray-700 md:hover:transform md:hover:scale-105 md:hover:duration-500 md:hover:ease-in-out"
         />
       </div>
 
