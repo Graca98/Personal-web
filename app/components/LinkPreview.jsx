@@ -54,7 +54,7 @@ export default async function LinkPreview({ url, webImage = emptyImg, skills=[] 
     <Link
       href={url}
       target="_blank"
-      className="cursor-pointer flex items-start bg-[#0f172a] gap-3 text-left p-4 hover:bg-gray-800 hover:rounded-lg mb-4"
+      className="cursor-pointer flex flex-col-reverse lg:flex-row items-start bg-[#0f172a] gap-3 text-left lg:px-4 py-4 hover:bg-gray-800 hover:rounded-lg mb-4"
       style={{ textDecoration: "none" }}
     >
       <div className="pt-2 ">
@@ -67,7 +67,7 @@ export default async function LinkPreview({ url, webImage = emptyImg, skills=[] 
         />
       </div>
 
-      <div className="px-4 w-[60%]">
+      <div className="lg:px-4 lg:w-[60%]">
         <h3 className="text-xl text-slate-200 font-semibold mb-2">
           {data.title}
         </h3>
