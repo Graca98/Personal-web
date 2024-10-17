@@ -60,8 +60,8 @@ export default function MainPage() {
           >
             <h2 className="font-bold text-2xl mb-4 lg:hidden sticky-headline">O mně</h2>
             <p className="mb-4 leading-relaxed">
-              V roce 2018, když jsem pracoval na letišti v Amsterdamu, jsem se
-              na bytě potkal s kamarádem, který se začal sám učit tvořit webové
+              V roce 2022, když jsem pracoval na letišti v Amsterdamu, jsem se
+              seznámil s kamarádem, který se začal sám učit tvořit webové
               stránky. Jeho nadšení mě natolik zaujalo, že jsem se k němu přidal
               a společně jsme si pomáhali s učením základů HTML, CSS a
               JavaScriptu. Po návratu do Česka jsem si udělal kurz od <span className="main-bold">ITNetworku</span> zaměřený na vývoj webových aplikací, a to mě zavedlo
@@ -85,7 +85,7 @@ export default function MainPage() {
               úkoly, které se ukládají do <span className="main-bold">MongoDB</span>.
             </p>
             <p className="mb-4 leading-relaxed">
-              Když zrovna nepracuji, rád si zahraji videohry, vyrážím na
+              Když zrovna nepracuji, rád si zahraji videohry, nebo vymýšlím nové projekty na kterých se zároveň učím více o frontend developmentu. A když mě zrovna nezastihnete u počítače, vyrážím na
               posezení s kamarády nebo cestuji po památkách.
             </p>
           </section>
