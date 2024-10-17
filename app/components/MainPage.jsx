@@ -13,7 +13,7 @@ import { FaBlackTie } from "react-icons/fa6";
 export default function MainPage() {
   // const sectionRef = useRef(null)
   return (
-    <div className="mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0">
+    <div className="mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-12 lg:px-24 lg:py-0">
       <div className="lg:flex lg:justify-between lg:gap-4">
         <header className="lg:max-h-screen lg:min-h-screen lg:w-1/2 lg:top-0 lg:py-24 lg:sticky flex flex-col lg:justify-between">
           <section className="mb-12">
@@ -25,7 +25,7 @@ export default function MainPage() {
               Junior Frontend Developer
             </h2>
             <h3 className="max-w-xs">
-              Zde bude krátký popis o tom co vytvářím a tak dále...
+              Tvořím moderní, přístupné a vizuálně působivé webové stránky.
             </h3>
 
             {/* ========== Navigation ========== */}
@@ -43,13 +43,16 @@ export default function MainPage() {
             <Link href="https://www.facebook.com/Gracous1234" target="_blank">
               <FaFacebook className="hover:text-white h-6 w-6" />
             </Link>
-            <Link href="https://www.itnetwork.cz/portfolio/117628" target="_blank">
+            <Link
+              href="https://www.itnetwork.cz/portfolio/117628"
+              target="_blank"
+            >
               <FaBlackTie className="hover:text-white h-6 w-6" />
             </Link>
           </section>
         </header>
 
-        <main className="lg:w-1/2 pt-24">
+        <main className="lg:w-1/2 pt-24 lg:pb-24">
           {/* ========== About me ========== */}
           <section
             id="aboutme"
@@ -59,15 +62,14 @@ export default function MainPage() {
             <p className="mb-4 leading-relaxed">
               V roce 2018, když jsem pracoval na letišti v Amsterdamu, jsem se
               na bytě potkal s kamarádem, který se začal sám učit tvořit webové
-              stránky. Jeho nadšení mě natolik strhlo, že jsem se k němu přidal
+              stránky. Jeho nadšení mě natolik zaujalo, že jsem se k němu přidal
               a společně jsme si pomáhali s učením základů HTML, CSS a
-              JavaScriptu. Po návratu do Česka jsem si navíc udělal kurz na
-              ITNetworku zaměřený na vývoj webových aplikací, a to mě zavedlo
+              JavaScriptu. Po návratu do Česka jsem si udělal kurz od <span className="main-bold">ITNetworku</span> zaměřený na vývoj webových aplikací, a to mě zavedlo
               hlouběji do světa web developmentu.
             </p>
             <p className="mb-4 leading-relaxed">
               Od té doby jsem pracoval na vlastních projektech, včetně jednoho
-              pro Minecraft server, kde jsem využíval API na načítání skinů
+              pro Minecraft server, kde jsem využil API na načítání skinů
               hráčů. V současné době se soustředím na frontend vývoj webových
               stránek podle předem určeného designu a postupně se více nořím do
               práce s API.
@@ -78,9 +80,9 @@ export default function MainPage() {
               proces vývoje aplikace od nápadu až po finální produkt.
             </p>
             <p className="mb-4 leading-relaxed">
-              Jsem hrdý na svou Minecraft stránku, která asynchronně načítá
-              skiny hráčů, a na todo aplikaci, kde uživatelé mohou spravovat své
-              úkoly, které se ukládají do MongoDB.
+              Jsem hrdý na svou <span className="main-bold">Minecraft stránku</span>, která asynchronně načítá
+              skiny hráčů, a na <span className="main-bold">todo aplikaci</span>, kde uživatelé mohou spravovat své
+              úkoly, které se ukládají do <span className="main-bold">MongoDB</span>.
             </p>
             <p className="mb-4 leading-relaxed">
               Když zrovna nepracuji, rád si zahraji videohry, vyrážím na
@@ -94,8 +96,10 @@ export default function MainPage() {
             className="mb-16 md:mb-24 lg:mb-36 scroll-mt-16 lg:scroll-mt-24"
           >
             <h2 className="font-bold text-2xl mb-4">Moje zkušenosti</h2>
-            <div className="grid grid-cols-8 mb-6 hover:bg-gray-800 hover:rounded-lg p-4">
-              <div className="col-span-2 mt-[2px]">
+
+            {/* Fast */}
+            <div className="grid lg:grid-cols-8 mb-6 hover:bg-gray-800 hover:rounded-lg lg:px-4 py-4">
+              <div className="col-span-2 mt-[2px] mb-2 lg:mb-0">
                 <p>2023 — 2024</p>
               </div>
               <div className="col-span-6 w-fit">
@@ -117,8 +121,8 @@ export default function MainPage() {
             </div>
 
             {/* Kurz */}
-            <div className="grid grid-cols-8 mb-6 hover:bg-gray-800 hover:rounded-lg p-4">
-              <div className="col-span-2 mt-[2px]">
+            <div className="grid lg:grid-cols-8 mb-6 hover:bg-gray-800 hover:rounded-lg lg:px-4 py-4">
+              <div className="col-span-2 mt-[2px] mb-2 lg:mb-0">
                 <p>2023 — 2023</p>
               </div>
               <div className="col-span-6 w-fit">
@@ -154,8 +158,8 @@ export default function MainPage() {
             </div>
 
             {/* Ramp agent */}
-            <div className="grid grid-cols-8 mb-6 hover:bg-gray-800 hover:rounded-lg p-4">
-              <div className="col-span-2 mt-[2px]">
+            <div className="grid lg:grid-cols-8 mb-6 hover:bg-gray-800 hover:rounded-lg lg:px-4 py-4">
+              <div className="col-span-2 mt-[2px] mb-2 lg:mb-0">
                 <p>2022 — 2023</p>
               </div>
               <div className="col-span-6 w-fit">
@@ -167,8 +171,8 @@ export default function MainPage() {
             </div>
 
             {/* Seřizovač */}
-            <div className="grid grid-cols-8 mb-6 hover:bg-gray-800 hover:rounded-lg p-4">
-              <div className="col-span-2 mt-[2px]">
+            <div className="grid lg:grid-cols-8 mb-6 hover:bg-gray-800 hover:rounded-lg lg:px-4 py-4">
+              <div className="col-span-2 mt-[2px] mb-2 lg:mb-0">
                 <p>2019 — 2022</p>
               </div>
               <div className="col-span-6 w-fit">
@@ -187,7 +191,12 @@ export default function MainPage() {
 
           <footer>
             <p className="text-xs">
-              Zde bude finální text + od koho mam inspiraci
+              Navrženo ve <span className="footer-bold">Figmě</span> a kódováno
+              ve <span className="footer-bold">Visual Studio Code</span>.
+              Vytvořeno pomocí <span className="footer-bold">Next.js</span> a{" "}
+              <span className="footer-bold">Tailwind CSS</span>, nasazeno přes{" "}
+              <span className="footer-bold">Netlify</span>. Design je inspirován
+              tvorbou <span className="footer-bold">Brittany Chiang</span>.
             </p>
           </footer>
         </main>
