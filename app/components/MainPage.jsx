@@ -4,7 +4,9 @@ import Link from "next/link";
 import ScrollButtons from "./ScrollButtons";
 import Badge from "./Badge";
 import Projects from "./Projects";
+import CopyButton from "./CopyButton";
 
+// Icons
 import { FaGithub } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
@@ -33,22 +35,30 @@ export default function MainPage() {
           </section>
 
           {/* ========== Icons ========== */}
-          <section className="flex items-end content-end gap-4">
-            <Link href="https://github.com/Graca98" target="_blank">
-              <FaGithub className="hover:text-slate-200 atcite:text-slate-100 h-6 w-6" />
-            </Link>
-            <Link href="https://www.instagram.com/gracous1/" target="_blank">
-              <FaInstagram className="hover:text-white h-6 w-6" />
-            </Link>
-            <Link href="https://www.facebook.com/Gracous1234" target="_blank">
-              <FaFacebook className="hover:text-white h-6 w-6" />
-            </Link>
-            <Link
-              href="https://www.itnetwork.cz/portfolio/117628"
-              target="_blank"
-            >
-              <FaBlackTie className="hover:text-white h-6 w-6" />
-            </Link>
+          <section className="flex flex-col gap-4">
+            <div className="flex flex-row gap-4">
+              <Link href="https://github.com/Graca98" target="_blank">
+                <FaGithub className="hover:text-slate-200 atcite:text-slate-100 h-6 w-6" />
+              </Link>
+              <Link href="https://www.instagram.com/gracous1/" target="_blank">
+                <FaInstagram className="hover:text-white h-6 w-6" />
+              </Link>
+              <Link href="https://www.facebook.com/Gracous1234" target="_blank">
+                <FaFacebook className="hover:text-white h-6 w-6" />
+              </Link>
+              <Link
+                href="https://www.itnetwork.cz/portfolio/117628"
+                target="_blank"
+              >
+                <FaBlackTie className="hover:text-white h-6 w-6" />
+              </Link>
+            </div>
+            <div className="">
+              <CopyButton
+                copy="denisgracias98@gmail.com"
+                style="flex gap-2 md:hover:text-white break-all"
+              />
+            </div>
           </section>
         </header>
 
@@ -58,21 +68,25 @@ export default function MainPage() {
             id="aboutme"
             className="mb-16 md:mb-24 lg:mb-36 scroll-mt-16 lg:scroll-mt-24"
           >
-            <h2 className="font-bold text-2xl mb-4 lg:hidden sticky-headline">O mně</h2>
+            <h2 className="font-bold text-2xl mb-4 lg:hidden sticky-headline">
+              O mně
+            </h2>
             <p className="mb-4 leading-relaxed">
               V roce 2022, když jsem pracoval na letišti v Amsterdamu, jsem se
               seznámil s kamarádem, který se začal sám učit tvořit webové
               stránky. Jeho nadšení mě natolik zaujalo, že jsem se k němu přidal
               a společně jsme si pomáhali s učením základů HTML, CSS a
-              JavaScriptu. Po návratu do Česka jsem si udělal kurz od <span className="main-bold">ITNetworku</span> zaměřený na vývoj webových aplikací, a to mě zavedlo
-              hlouběji do světa web developmentu.
+              JavaScriptu. Po návratu do Česka jsem si udělal kurz od{" "}
+              <span className="main-bold">ITNetworku</span> zaměřený na vývoj
+              webových aplikací, a to mě zavedlo hlouběji do světa web
+              developmentu.
             </p>
             <p className="mb-4 leading-relaxed">
               Od té doby jsem pracoval na vlastních projektech, včetně jednoho
-              pro Minecraft server, kde jsem využil API na načítání skinů
-              hráčů. V současné době se soustředím na frontend vývoj webových
-              stránek podle předem určeného designu a postupně se více nořím do
-              práce s API.
+              pro Minecraft server, kde jsem využil API na načítání skinů hráčů.
+              V současné době se soustředím na frontend vývoj webových stránek
+              podle předem určeného designu a postupně se více nořím do práce s
+              API.
             </p>
             <p className="mb-4 leading-relaxed">
               Nejvíce mě na vývoji baví pozorovat, jak se řádky kódu mění v
@@ -80,13 +94,18 @@ export default function MainPage() {
               proces vývoje aplikace od nápadu až po finální produkt.
             </p>
             <p className="mb-4 leading-relaxed">
-              Jsem hrdý na svou <span className="main-bold">Minecraft stránku</span>, která asynchronně načítá
-              skiny hráčů, a na <span className="main-bold">todo aplikaci</span>, kde uživatelé mohou spravovat své
-              úkoly, které se ukládají do <span className="main-bold">MongoDB</span>.
+              Jsem hrdý na svou{" "}
+              <span className="main-bold">Minecraft stránku</span>, která
+              asynchronně načítá skiny hráčů, a na{" "}
+              <span className="main-bold">todo aplikaci</span>, kde uživatelé
+              mohou spravovat své úkoly, které se ukládají do{" "}
+              <span className="main-bold">MongoDB</span>.
             </p>
             <p className="mb-4 leading-relaxed">
-              Když zrovna nepracuji, rád si zahraji videohry, nebo vymýšlím nové projekty na kterých se zároveň učím více o frontend developmentu. A když mě zrovna nezastihnete u počítače, vyrážím na
-              posezení s kamarády nebo cestuji po památkách.
+              Když zrovna nepracuji, rád si zahraji videohry, nebo vymýšlím nové
+              projekty na kterých se zároveň učím více o frontend developmentu.
+              A když mě zrovna nezastihnete u počítače, vyrážím na posezení s
+              kamarády nebo cestuji po památkách.
             </p>
           </section>
 
@@ -95,7 +114,9 @@ export default function MainPage() {
             id="experience"
             className="mb-16 md:mb-24 lg:mb-36 scroll-mt-16 lg:scroll-mt-24"
           >
-            <h2 className="font-bold text-2xl mb-4 sticky-headline">Zkušenosti</h2>
+            <h2 className="font-bold text-2xl mb-4 sticky-headline">
+              Zkušenosti
+            </h2>
 
             {/* Fast */}
             <div className="grid lg:grid-cols-8 mb-6 md:hover:bg-gray-800 md:hover:rounded-lg md:-mx-4 md:px-4 py-4">
