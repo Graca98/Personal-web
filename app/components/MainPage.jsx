@@ -118,6 +118,37 @@ export default function MainPage() {
               Zkušenosti
             </h2>
 
+            {/* Engeto */}
+            <div className="grid lg:grid-cols-8 mb-6 md:hover:bg-gray-800 md:hover:rounded-lg md:-mx-4 md:px-4 py-4">
+              <div className="col-span-2 mt-[2px] mb-2 lg:mb-0">
+                <p>2025 —</p>
+              </div>
+              <div className="col-span-6 w-fit">
+                <h3 className="text-xl text-slate-200 font-semibold mb-4">
+                  Rekvalifikační kurz Tester s Pythonem ·
+                  Engeto s.r.o. - Engeto Akademie
+                </h3>
+                <ul className="text-sm mb-4 list-disc list-inside">
+                  <li>Programování v jazyce Python (Zakončeno certifikátem)</li>
+                  <li>Práce s knihovnami, moduly a balíčky v Pythonu</li>
+                  <li>Testování v Pythonu (unit testy, testovací frameworky, Pytest)</li>
+                  <li>Testování webových aplikací pomocí Playwright</li>
+                  <li>Práce s databázemi (SQL dotazy, MySQL)</li>
+                  <li>Projektové řízení (Scrum, Agile)</li>
+                  <li>Práce s verzovacím systémem Git</li>
+                </ul>
+                <ul className="flex flex-wrap gap-2">
+                  {/* <li className="px-3 py-1 rounded-full bg-sky-950 text-sky-400"> */}
+                  <Badge skill="Python" />
+                  <Badge skill="Pytest" />
+                  <Badge skill="Playwright" />
+                  <Badge skill="SQL" />
+                  <Badge skill="HTML/CSS" />
+                  <Badge skill="JavaScript" />
+                </ul>
+              </div>
+            </div>
+
             {/* Fast */}
             <div className="grid lg:grid-cols-8 mb-6 md:hover:bg-gray-800 md:hover:rounded-lg md:-mx-4 md:px-4 py-4">
               <div className="col-span-2 mt-[2px] mb-2 lg:mb-0">
@@ -151,7 +182,7 @@ export default function MainPage() {
                   Rekvalifikační kurz Programátor WWW aplikací JavaScript ·
                   ITnetwork s.r.o. - IT AKADEMIE
                 </h3>
-                <ul className="text-sm mb-4">
+                <ul className="text-sm mb-4 list-disc list-inside">
                   <li>
                     Základní konstrukce jazyka JavaScript (Zakončeno
                     certifikátem)
