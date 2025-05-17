@@ -23,11 +23,15 @@ export default function MainPage() {
             <h1 className="text-5xl text-slate-200 font-bold text mb-3">
               Denis Gracias
             </h1>
-            <h2 className="text-xl text-slate-200 font-semibold mb-3">
+            <h2 className="text-xl text-slate-200 font-semibold mb-0">
               Junior Frontend Developer
             </h2>
+            <h2 className="text-xl text-slate-200 font-semibold mb-3">
+              Software Tester
+            </h2>
             <h3 className="max-w-xs">
-              Tvořím moderní, přístupné a vizuálně působivé webové stránky.
+              Tvořím moderní, přístupné a vizuálně působivé webové stránky,
+              které testuji pomocí moderních nástrojů.
             </h3>
 
             {/* ========== Navigation ========== */}
@@ -82,11 +86,22 @@ export default function MainPage() {
               developmentu.
             </p>
             <p className="mb-4 leading-relaxed">
+              Později jsem absolvoval také{" "}
+              <span className="main-bold">
+                rekvalifikační kurz Python testera od Engeto
+              </span>
+              , kde jsem se naučil automatizované testování pomocí{" "}
+              <span className="main-bold">Pytest</span> a{" "}
+              <span className="main-bold">Playwright</span>. Díky tomu se nyní
+              kromě vývoje věnuji i psaní testů a kontrole kvality aplikací.
+            </p>
+            <p className="mb-4 leading-relaxed">
               Od té doby jsem pracoval na vlastních projektech, včetně jednoho
               pro Minecraft server, kde jsem využil API na načítání skinů hráčů.
               V současné době se soustředím na frontend vývoj webových stránek
               podle předem určeného designu a postupně se více nořím do práce s
-              API.
+              API (REST, Supabase) a testováním softwaru pomocí moderních
+              nástrojů jako je Playwright nebo Pytest.
             </p>
             <p className="mb-4 leading-relaxed">
               Nejvíce mě na vývoji baví pozorovat, jak se řádky kódu mění v
@@ -99,13 +114,14 @@ export default function MainPage() {
               asynchronně načítá skiny hráčů, a na{" "}
               <span className="main-bold">todo aplikaci</span>, kde uživatelé
               mohou spravovat své úkoly, které se ukládají do{" "}
-              <span className="main-bold">MongoDB</span>.
+              <span className="main-bold">PostgreSQL</span> databáze přes{" "}
+              <span className="main-bold">Supabase</span>.
             </p>
             <p className="mb-4 leading-relaxed">
               Když zrovna nepracuji, rád si zahraji videohry, nebo vymýšlím nové
-              projekty na kterých se zároveň učím více o frontend developmentu.
-              A když mě zrovna nezastihnete u počítače, vyrážím na posezení s
-              kamarády nebo cestuji po památkách.
+              projekty na kterých se zároveň učím více o frontend developmentu a
+              testování aplikací. A když mě zrovna nezastihnete u počítače,
+              vyrážím na posezení s kamarády nebo cestuji po památkách.
             </p>
           </section>
 
@@ -125,13 +141,16 @@ export default function MainPage() {
               </div>
               <div className="col-span-6 w-fit">
                 <h3 className="text-xl text-slate-200 font-semibold mb-4">
-                  Rekvalifikační kurz Tester s Pythonem ·
-                  Engeto s.r.o. - Engeto Akademie
+                  Rekvalifikační kurz Tester s Pythonem · Engeto s.r.o. - Engeto
+                  Akademie
                 </h3>
-                <ul className="text-sm mb-4 list-disc list-inside">
+                <ul className="text-sm mb-4 list-disc pl-5">
                   <li>Programování v jazyce Python (Zakončeno certifikátem)</li>
                   <li>Práce s knihovnami, moduly a balíčky v Pythonu</li>
-                  <li>Testování v Pythonu (unit testy, testovací frameworky, Pytest)</li>
+                  <li>
+                    Testování v Pythonu (unit testy, testovací frameworky,
+                    Pytest)
+                  </li>
                   <li>Testování webových aplikací pomocí Playwright</li>
                   <li>Práce s databázemi (SQL dotazy, MySQL)</li>
                   <li>Projektové řízení (Scrum, Agile)</li>
@@ -182,7 +201,7 @@ export default function MainPage() {
                   Rekvalifikační kurz Programátor WWW aplikací JavaScript ·
                   ITnetwork s.r.o. - IT AKADEMIE
                 </h3>
-                <ul className="text-sm mb-4 list-disc list-inside">
+                <ul className="text-sm mb-4 list-disc pl-5">
                   <li>
                     Základní konstrukce jazyka JavaScript (Zakončeno
                     certifikátem)

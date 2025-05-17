@@ -14,6 +14,7 @@ export default function Projects() {
       <LinkPreviw
         url={"https://nextjs-todo-list.netlify.app/"}
         webImage={"/img/web-previews/TodoApp.png"}
+        desc="Moderní todo aplikace postavená na Next.js a Supabase. Umožňuje správu kolekcí, úkolů, priorit, připomenutí a filtrování."
         skills={[
           "NextJS",
           "TailwindCSS",
@@ -25,6 +26,7 @@ export default function Projects() {
       <LinkPreviw
         url={"https://graca98.github.io/Terminus-Page/"}
         webImage={"/img/web-previews/TerminusPage.png"}
+        desc="Webová stránka pro Terminus minecraft server"
         skills={["NextJS", "TailwindCSS", "RippleUI", "React Icons"]}
       />
 
@@ -68,11 +70,13 @@ export default function Projects() {
       <LinkPreviw
         url={"https://graca98.github.io/PojisteniApp-Project/index.html?"}
         webImage={"/img/web-previews/Pojisteni.png"}
+        desc="Můj první web – jednoduchý projekt pro správu pojištěnců"
         skills={["HTML", "CSS", "JavaScript", "Bootstrap"]}
       />
       <LinkPreviw
         url={"https://graca98.github.io/kalkulacka/"}
         webImage={"/img/web-previews/Kalkulacka.png"}
+        desc="Jednoduchá kalkulačka v JavaScriptu"
         skills={["HTML", "CSS", "JavaScript"]}
       />
     </section>
