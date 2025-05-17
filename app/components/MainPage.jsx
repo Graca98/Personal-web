@@ -4,7 +4,9 @@ import Link from "next/link";
 import ScrollButtons from "./ScrollButtons";
 import Badge from "./Badge";
 import Projects from "./Projects";
+import CopyButton from "./CopyButton";
 
+// Icons
 import { FaGithub } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
@@ -21,11 +23,15 @@ export default function MainPage() {
             <h1 className="text-5xl text-slate-200 font-bold text mb-3">
               Denis Gracias
             </h1>
-            <h2 className="text-xl text-slate-200 font-semibold mb-3">
+            <h2 className="text-xl text-slate-200 font-semibold mb-0">
               Junior Frontend Developer
             </h2>
+            <h2 className="text-xl text-slate-200 font-semibold mb-3">
+              Software Tester
+            </h2>
             <h3 className="max-w-xs">
-              Tvořím moderní, přístupné a vizuálně působivé webové stránky.
+              Tvořím moderní, přístupné a vizuálně působivé webové stránky,
+              které testuji pomocí moderních nástrojů.
             </h3>
 
             {/* ========== Navigation ========== */}
@@ -33,22 +39,30 @@ export default function MainPage() {
           </section>
 
           {/* ========== Icons ========== */}
-          <section className="flex items-end content-end gap-4">
-            <Link href="https://github.com/Graca98" target="_blank">
-              <FaGithub className="hover:text-slate-200 atcite:text-slate-100 h-6 w-6" />
-            </Link>
-            <Link href="https://www.instagram.com/gracous1/" target="_blank">
-              <FaInstagram className="hover:text-white h-6 w-6" />
-            </Link>
-            <Link href="https://www.facebook.com/Gracous1234" target="_blank">
-              <FaFacebook className="hover:text-white h-6 w-6" />
-            </Link>
-            <Link
-              href="https://www.itnetwork.cz/portfolio/117628"
-              target="_blank"
-            >
-              <FaBlackTie className="hover:text-white h-6 w-6" />
-            </Link>
+          <section className="flex flex-col gap-4">
+            <div className="flex flex-row gap-4">
+              <Link href="https://github.com/Graca98" target="_blank">
+                <FaGithub className="hover:text-slate-200 atcite:text-slate-100 h-6 w-6" />
+              </Link>
+              <Link href="https://www.instagram.com/gracous1/" target="_blank">
+                <FaInstagram className="hover:text-white h-6 w-6" />
+              </Link>
+              <Link href="https://www.facebook.com/Gracous1234" target="_blank">
+                <FaFacebook className="hover:text-white h-6 w-6" />
+              </Link>
+              <Link
+                href="https://www.itnetwork.cz/portfolio/117628"
+                target="_blank"
+              >
+                <FaBlackTie className="hover:text-white h-6 w-6" />
+              </Link>
+            </div>
+            <div className="">
+              <CopyButton
+                copy="denisgracias98@gmail.com"
+                style="flex gap-2 md:hover:text-white break-all"
+              />
+            </div>
           </section>
         </header>
 
@@ -58,21 +72,36 @@ export default function MainPage() {
             id="aboutme"
             className="mb-16 md:mb-24 lg:mb-36 scroll-mt-16 lg:scroll-mt-24"
           >
-            <h2 className="font-bold text-2xl mb-4 lg:hidden sticky-headline">O mně</h2>
+            <h2 className="font-bold text-2xl mb-4 lg:hidden sticky-headline">
+              O mně
+            </h2>
             <p className="mb-4 leading-relaxed">
               V roce 2022, když jsem pracoval na letišti v Amsterdamu, jsem se
               seznámil s kamarádem, který se začal sám učit tvořit webové
               stránky. Jeho nadšení mě natolik zaujalo, že jsem se k němu přidal
               a společně jsme si pomáhali s učením základů HTML, CSS a
-              JavaScriptu. Po návratu do Česka jsem si udělal kurz od <span className="main-bold">ITNetworku</span> zaměřený na vývoj webových aplikací, a to mě zavedlo
-              hlouběji do světa web developmentu.
+              JavaScriptu. Po návratu do Česka jsem si udělal kurz od{" "}
+              <span className="main-bold">ITNetworku</span> zaměřený na vývoj
+              webových aplikací, a to mě zavedlo hlouběji do světa web
+              developmentu.
+            </p>
+            <p className="mb-4 leading-relaxed">
+              Později jsem absolvoval také{" "}
+              <span className="main-bold">
+                rekvalifikační kurz Python testera od Engeto
+              </span>
+              , kde jsem se naučil automatizované testování pomocí{" "}
+              <span className="main-bold">Pytest</span> a{" "}
+              <span className="main-bold">Playwright</span>. Díky tomu se nyní
+              kromě vývoje věnuji i psaní testů a kontrole kvality aplikací.
             </p>
             <p className="mb-4 leading-relaxed">
               Od té doby jsem pracoval na vlastních projektech, včetně jednoho
-              pro Minecraft server, kde jsem využil API na načítání skinů
-              hráčů. V současné době se soustředím na frontend vývoj webových
-              stránek podle předem určeného designu a postupně se více nořím do
-              práce s API.
+              pro Minecraft server, kde jsem využil API na načítání skinů hráčů.
+              V současné době se soustředím na frontend vývoj webových stránek
+              podle předem určeného designu a postupně se více nořím do práce s
+              API (REST, Supabase) a testováním softwaru pomocí moderních
+              nástrojů jako je Playwright nebo Pytest.
             </p>
             <p className="mb-4 leading-relaxed">
               Nejvíce mě na vývoji baví pozorovat, jak se řádky kódu mění v
@@ -80,13 +109,19 @@ export default function MainPage() {
               proces vývoje aplikace od nápadu až po finální produkt.
             </p>
             <p className="mb-4 leading-relaxed">
-              Jsem hrdý na svou <span className="main-bold">Minecraft stránku</span>, která asynchronně načítá
-              skiny hráčů, a na <span className="main-bold">todo aplikaci</span>, kde uživatelé mohou spravovat své
-              úkoly, které se ukládají do <span className="main-bold">MongoDB</span>.
+              Jsem hrdý na svou{" "}
+              <span className="main-bold">Minecraft stránku</span>, která
+              asynchronně načítá skiny hráčů, a na{" "}
+              <span className="main-bold">todo aplikaci</span>, kde uživatelé
+              mohou spravovat své úkoly, které se ukládají do{" "}
+              <span className="main-bold">PostgreSQL</span> databáze přes{" "}
+              <span className="main-bold">Supabase</span>.
             </p>
             <p className="mb-4 leading-relaxed">
-              Když zrovna nepracuji, rád si zahraji videohry, nebo vymýšlím nové projekty na kterých se zároveň učím více o frontend developmentu. A když mě zrovna nezastihnete u počítače, vyrážím na
-              posezení s kamarády nebo cestuji po památkách.
+              Když zrovna nepracuji, rád si zahraji videohry, nebo vymýšlím nové
+              projekty na kterých se zároveň učím více o frontend developmentu a
+              testování aplikací. A když mě zrovna nezastihnete u počítače,
+              vyrážím na posezení s kamarády nebo cestuji po památkách.
             </p>
           </section>
 
@@ -95,7 +130,43 @@ export default function MainPage() {
             id="experience"
             className="mb-16 md:mb-24 lg:mb-36 scroll-mt-16 lg:scroll-mt-24"
           >
-            <h2 className="font-bold text-2xl mb-4 sticky-headline">Zkušenosti</h2>
+            <h2 className="font-bold text-2xl mb-4 sticky-headline">
+              Zkušenosti
+            </h2>
+
+            {/* Engeto */}
+            <div className="grid lg:grid-cols-8 mb-6 md:hover:bg-gray-800 md:hover:rounded-lg md:-mx-4 md:px-4 py-4">
+              <div className="col-span-2 mt-[2px] mb-2 lg:mb-0">
+                <p>2025 —</p>
+              </div>
+              <div className="col-span-6 w-fit">
+                <h3 className="text-xl text-slate-200 font-semibold mb-4">
+                  Rekvalifikační kurz Tester s Pythonem · Engeto s.r.o. - Engeto
+                  Akademie
+                </h3>
+                <ul className="text-sm mb-4 list-disc pl-5">
+                  <li>Programování v jazyce Python (Zakončeno certifikátem)</li>
+                  <li>Práce s knihovnami, moduly a balíčky v Pythonu</li>
+                  <li>
+                    Testování v Pythonu (unit testy, testovací frameworky,
+                    Pytest)
+                  </li>
+                  <li>Testování webových aplikací pomocí Playwright</li>
+                  <li>Práce s databázemi (SQL dotazy, MySQL)</li>
+                  <li>Projektové řízení (Scrum, Agile)</li>
+                  <li>Práce s verzovacím systémem Git</li>
+                </ul>
+                <ul className="flex flex-wrap gap-2">
+                  {/* <li className="px-3 py-1 rounded-full bg-sky-950 text-sky-400"> */}
+                  <Badge skill="Python" />
+                  <Badge skill="Pytest" />
+                  <Badge skill="Playwright" />
+                  <Badge skill="SQL" />
+                  <Badge skill="HTML/CSS" />
+                  <Badge skill="JavaScript" />
+                </ul>
+              </div>
+            </div>
 
             {/* Fast */}
             <div className="grid lg:grid-cols-8 mb-6 md:hover:bg-gray-800 md:hover:rounded-lg md:-mx-4 md:px-4 py-4">
@@ -130,7 +201,7 @@ export default function MainPage() {
                   Rekvalifikační kurz Programátor WWW aplikací JavaScript ·
                   ITnetwork s.r.o. - IT AKADEMIE
                 </h3>
-                <ul className="text-sm mb-4">
+                <ul className="text-sm mb-4 list-disc pl-5">
                   <li>
                     Základní konstrukce jazyka JavaScript (Zakončeno
                     certifikátem)

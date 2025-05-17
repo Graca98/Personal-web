@@ -43,8 +43,7 @@ const extractMetaTags = async (url) => {
 
 const emptyImg = "/img/web-previews/Empty.png";
 
-export default async function LinkPreview({ url, webImage = emptyImg, skills=[] }) {
-  //here calling the function
+export default async function LinkPreview({ url, webImage = emptyImg, desc="", skills=[] }) {
   const data = await extractMetaTags(url);
 
   if (!data) {
@@ -71,7 +70,7 @@ export default async function LinkPreview({ url, webImage = emptyImg, skills=[] 
         <h3 className="text-xl text-slate-200 font-semibold mb-2">
           {data.title}
         </h3>
-        <p className="text-sm mb-2">{data.description}</p>
+        <p className="text-sm mb-2">{desc}</p>
         <p className="text-xs opacity-50 mb-4">{url}</p>
         <ul className="flex flex-wrap gap-2">
         {skills.map((skillName, index) => {
