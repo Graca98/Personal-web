@@ -84,8 +84,8 @@ export default function Projects() {
       >
         <div className="pt-2 ">
           <Image
-            src={"/img/web-previews/Empty.png"}
-            alt={`Náhled konzolové aplikace`}
+            src={"/img/web-previews/python_pytest.png"}
+            alt={`Náhled konzolové aplikace a pytest testů`}
             width={200}
             height={48}
             className="m-0 border-2 rounded-md border-gray-700 md:hover:transform md:hover:scale-105 md:hover:duration-500 md:hover:ease-in-out"
